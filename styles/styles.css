@@ -118,7 +118,7 @@
     background-size: cover;
 }
 .curriculam-title{
-    padding: 60px 0px 80px 0px;
+    margin: 60px 0px 80px 0px;
 }
 .curriculam-cards{
     display: flex;
@@ -187,7 +187,9 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+.stories-title{
+    margin: 60px 0px 80px 0px; 
+}
 
 
 
