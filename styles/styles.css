@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.quicksand-primary-font {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: auto;
+  font-style: normal;
+}
+.raleway-secondary-font {
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: auto;
+    font-style: normal;
+  }
+  /* ========== custom styles ======== */
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  h1,h2,h3,h4,h5,h6,a{
+    font-family: "Quicksand", serif;
+  }
+  p{
+    font-family: "Raleway", serif;
+  }
+  .praimary-color{
+    color: #FEA301;
+  }
+  .secondary-color{
+    color: #01ACFD;
+  }
+  .content-width{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .content-heading{
+    font-size: 3.2rem;
+  }
+  .text-center{
+    text-align: center;
+  }
+  .btn-primary{
+    font-size: 1.2rem;
+    font-family: "Quicksand", serif;
+    font-weight: 700;
+    color: #fff;
+    padding: 10px 40px;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+  /* ========== navbar styles ======== */
+  .navbar{
+    margin: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .brand-logo{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+  }
+  .brand-name{
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .navs{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 32px;
+  }
+  .nav-items{
+    list-style: none;
+  }
+  .nav-links{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .btn-secondary{
+    font-size: 1.2rem;
+    font-family: "Quicksand", serif;
+    font-weight: 700;
+    color: #fff;
+    padding: 10px 40px;
+    background-color: #FEA301;
+    border: 1px solid #FEA301;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+  .hamburg{
+    display: none;
+  }
+
+/* ========== banner styles ======== */
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner-des{
+    margin: 24px 0px;
+    padding: 0px 300px 0px 0px;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.enroll-news{
+    margin: 20px 0px;
+}
+/* ========== standerd curriculam styles ======== */
+.curriculam{
+    background-image: url(../assets/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.curriculam-title{
+    padding: 60px 0px 80px 0px;
+}
+.curriculam-cards{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.curriculam-card{
+    width: 400px;
+    height: 500px;
+    border-radius: 18px;
+    box-shadow: 0px 0px 28px -15px;
+    border: 1px solid rgba(222, 245, 255, 1);
+    background-image: linear-gradient(rgba(222, 245, 255, 1),rgba(255, 255, 255, 0.541));
+}
+.card2{
+    background-image: linear-gradient(rgba(255, 244, 220, 1),rgba(255, 255, 255, 0.541));
+    border: 1px solid rgba(255, 244, 220, 1);
+}
+.card3{
+    background-image: linear-gradient(rgba(238, 225, 255, 1),rgba(255, 255, 255,0.541));
+    border: 1px solid rgba(238, 225, 255, 1);
+}
+.card-img{
+    margin-top: 52px;
+}
+.card-heading{
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 30px 0px;
+}
+.card-des{
+    font-size: 1rem;
+    line-height: 28px;
+    margin-bottom: 34px;
+}
+.card-btn{
+    font-family: "Quicksand", serif;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    color: black;
+    background: none;
+    cursor: pointer;
+}
+.arrow{
+    font-size: 1.8rem;
+    padding: 10px;
+    color: #fff;
+    border: 1px solid #FEA301;
+    background-color: #FEA301;
+    border-radius: 50%;
+}
+.arrow-button{
+    margin-top: 80px;
+}
+.arrow-left{
+    padding: 16px 20px 9px 16px;
+}
+.arrow-right{
+    padding: 16px 20px 9px 16px;;
+}
+/* ========== our stories styles ======== */
+.stories{
+    background-image: url(../assets/bg.png), linear-gradient(rgba(255, 255, 255, 0.849),rgba(254, 161, 1, 0.33));
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+  /* ========== Responsive media query============ */
+  @media only screen and (min-width : 577px) and (max-width : 992px){
+    .brand-name
+    {
+        display: none;
+    }
+/* ========== banner styles ======== */
+    .banner-heading, .curriculam-title{
+        font-size: 2rem;
+    }
+    .banner-content{
+        width: 60%;
+    }
+    .banner-img img{
+        width: 100%;
+    }
+    .banner-des{
+        padding: 0;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+/* ========== standerd curriculam styles ======== */
+    
+  }
+
+  @media only screen and (max-width : 576px){
+    .content-width{
+        width: 100%;
+      }
+      .media-width{
+        width: 90%;
+        margin: 0 auto;
+      }
+    .navs , .brand-name , .btn-secondary, .arrow-button
+    {
+        display: none;
+    }
+    .navbar{
+        margin: 0px;
+        padding: 10px;
+        height: 70px;
+        border: 1px solid #FEA301;
+    }
+/* ========== banner styles ======== */
+    .brand-logo{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .hamburg{
+        display: inline;
+      }
+      .banner{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .banner-heading, .curriculam-title{
+        font-size: 2rem;
+    }
+    .banner-des{
+        padding: 0;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    .banner-img img{
+        width: 100%;
+        margin: 20px 0px;
+    }
+    .banner-content{
+        text-align: center;
+    }
+/* ========== standerd curriculam styles ======== */
+    
+  }
