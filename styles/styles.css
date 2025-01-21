@@ -176,11 +176,9 @@
 .arrow-button{
     margin-top: 80px;
 }
-.arrow-left{
-    padding: 16px 20px 9px 16px;
-}
-.arrow-right{
-    padding: 16px 20px 9px 16px;;
+.arrow-left,.arrow-right{
+  width: 60px;
+  height: 60px;
 }
 /* ========== our stories styles ======== */
 .stories{
@@ -248,8 +246,53 @@
 }
 .stories-btn{
   margin: 80px 0px 60px 0px;
+  padding: 10px 56px;
+  letter-spacing: 4px;
 }
-
+/* ========== footer styles ======== */
+.footer-area{
+  background-color: #01ACFD;
+  color: #fff;
+}
+.footer-contents{
+  padding: 130px 0px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.footer-content{
+  width: 32%;
+}
+.logo-heading{
+  display: flex;
+  justify-content: start;
+}
+.logo-heading>img{
+  width: 140px;
+}
+.logo-heading>h1{
+  font-size: 2.5rem;
+  padding: 6px 0px 36px 0px;
+}
+.foot-content-title{
+  padding-bottom: 32px;
+}
+.footer-des{
+  font-size: 1.2rem;
+  line-height: 28px;
+  font-weight: 400;
+  padding-right: 50px;
+}
+.fl-item{
+  list-style:none;
+  padding-bottom: 20px;
+}
+.flink-item{
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: #fff;
+  font-weight: 400;
+}
   /* ========== Responsive media query============ */
   @media only screen and (min-width : 577px) and (max-width : 992px){
     #st-card-1,.brand-name
@@ -309,7 +352,7 @@
         display: flex;
         flex-direction: column-reverse;
     }
-    .banner-heading, .curriculam-title, .stories-title{
+    .banner-heading, .curriculam-title, .stories-title,.foot-content-title{
         font-size: 2rem;
     }
     .banner-des{
@@ -336,4 +379,15 @@
     padding: 0px 10px;
     margin-top: -26px;
   }
+  .footer-contents{
+    flex-direction: column;
   }
+  .footer-content{
+    width: 100%;
+  }
+  .footer-des{
+    padding: 30px 0px;
+    padding: 40px 0px;
+    line-height: 34px;
+  }
+}
