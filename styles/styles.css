@@ -40,6 +40,10 @@
   .text-center{
     text-align: center;
   }
+  
+  .display-none{
+    display: none;
+  }
   .btn-primary{
     font-size: 1.2rem;
     font-family: "Quicksand", serif;
@@ -91,9 +95,6 @@
     border: 1px solid #FEA301;
     border-radius: 12px;
     cursor: pointer;
-  }
-  .hamburg{
-    display: none;
   }
 
 /* ========== banner styles ======== */
@@ -190,14 +191,70 @@
 .stories-title{
     margin: 60px 0px 80px 0px; 
 }
-
-
+.stories-cards{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+}
+.stories-card{
+  background: #fff;
+  border-radius: 16px;
+}
+.stories-card img{
+  width: 100%;
+  border-radius: 16px 16px 0px 0px;
+}
+.st-card-btn{
+  font-family: "Raleway", serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #fff;
+  background-color: #3CD8E8;
+  border: 1px solid #3CD8E8;
+  border-radius: 48px;
+  padding: 10px 20px;
+}
+.card-btn-1{
+  background-color: #77A18D;
+  border: 1px solid #77A18D;
+}
+.card-btn-2{
+  background-color: #5D58F0;
+  border: 1px solid #5D58F0;
+}
+.st-card-title{
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 28px;
+  padding: 32px 0px 48px 0px;
+}
+.stories-card-title{
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 28px;
+  padding: 32px 0px 48px 0px;
+}
+.st-card-des{
+  font-size: 1rem;
+  line-height: 28px;
+}
+#st-card-1{
+  width: 560px;
+  grid-row: span 2;
+}
+.st-card-content{
+  padding: 0px 30px;
+  margin-top: -26px;
+}
+.stories-btn{
+  margin: 80px 0px 60px 0px;
+}
 
   /* ========== Responsive media query============ */
   @media only screen and (min-width : 577px) and (max-width : 992px){
-    .brand-name
+    #st-card-1,.brand-name
     {
-        display: none;
+      display: none;
     }
 /* ========== banner styles ======== */
     .banner-heading, .curriculam-title{
@@ -214,8 +271,10 @@
         font-size: 1rem;
         font-weight: 400;
     }
-/* ========== standerd curriculam styles ======== */
-    
+/* ========== our stories styles ======== */
+  .st-card-extra{
+    display: initial;
+  }
   }
 
   @media only screen and (max-width : 576px){
@@ -226,7 +285,7 @@
         width: 90%;
         margin: 0 auto;
       }
-    .navs , .brand-name , .btn-secondary, .arrow-button
+    .navs , .brand-name , .btn-secondary, .arrow-button,#st-card-1
     {
         display: none;
     }
@@ -244,13 +303,13 @@
         align-items: center;
       }
       .hamburg{
-        display: inline;
+        display: initial;
       }
       .banner{
         display: flex;
         flex-direction: column-reverse;
     }
-    .banner-heading, .curriculam-title{
+    .banner-heading, .curriculam-title, .stories-title{
         font-size: 2rem;
     }
     .banner-des{
@@ -265,6 +324,16 @@
     .banner-content{
         text-align: center;
     }
-/* ========== standerd curriculam styles ======== */
-    
+/* ========== our stories styles ======== */
+  .st-card-extra{
+    display: initial;
+  }
+  .stories-cards{
+  grid-template-columns: repeat(2,1fr);
+  gap: 10px;
+  }
+  .st-card-content{
+    padding: 0px 10px;
+    margin-top: -26px;
+  }
   }
