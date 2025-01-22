@@ -55,6 +55,12 @@
     border-radius: 12px;
     cursor: pointer;
   }
+  .btn-primary:hover{
+    color: black;
+    border: 1px solid black;
+    transition: 0.3s;
+    background-color: #fff;
+  }
   /* ========== navbar styles ======== */
   .navbar{
     margin: 20px 0px;
@@ -95,6 +101,12 @@
     border: 1px solid #FEA301;
     border-radius: 12px;
     cursor: pointer;
+  }
+  .btn-secondary:hover{
+    color: #FEA301;
+    border: 1px solid #FEA301;
+    transition: 0.3s;
+    background-color: #fff;
   }
 
 /* ========== banner styles ======== */
@@ -143,6 +155,9 @@
     background-image: linear-gradient(rgba(238, 225, 255, 1),rgba(255, 255, 255,0.541));
     border: 1px solid rgba(238, 225, 255, 1);
 }
+/* .curriculam-card:hover{
+  
+} */
 .card-img{
     margin-top: 52px;
 }
@@ -172,6 +187,12 @@
     border: 1px solid #FEA301;
     background-color: #FEA301;
     border-radius: 50%;
+}
+.arrow:hover{
+    color: #FEA301;
+    border: 1px solid #FEA301;
+    transition: 0.3s;
+    background-color: #fff;
 }
 .arrow-button{
     margin-top: 80px;
@@ -237,7 +258,6 @@
   line-height: 28px;
 }
 #st-card-1{
-  width: 560px;
   grid-row: span 2;
 }
 .st-card-content{
@@ -317,7 +337,10 @@
 /* ========== our stories styles ======== */
   .st-card-extra{
     display: initial;
-  }
+    }
+    .st-card-btn{
+      font-size: 0.8rem;
+    }
   }
 
   @media only screen and (max-width : 576px){
@@ -378,6 +401,9 @@
   .st-card-content{
     padding: 0px 10px;
     margin-top: -26px;
+  }
+  .st-card-btn{
+    font-size: 0.8rem;
   }
   .footer-contents{
     flex-direction: column;
