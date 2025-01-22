@@ -177,7 +177,7 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
-    background-color: #FEA301;
+    background-color: #01adfdb1;
     border-radius: 18px;
     transform: rotateY(180deg)rotateZ(180deg);
    }
@@ -186,6 +186,12 @@
   justify-content: space-evenly;
   gap: 25px;
   flex-wrap: wrap;
+}
+.card-b-2{
+  background-color: #fea101a7;
+}
+.card-b-3{
+  background-color: #5d58f0b6;
 }
 .card2{
     background-image: linear-gradient(rgba(255, 244, 220, 1),rgba(255, 255, 255, 0.541));
