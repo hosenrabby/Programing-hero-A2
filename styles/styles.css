@@ -133,19 +133,59 @@
 .curriculam-title{
     margin: 60px 0px 80px 0px;
 }
-.curriculam-cards{
+ /* .curriculam-cards{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 40px;
-}
-.curriculam-card{
+} */
+   .card-container{
     width: 400px;
     height: 500px;
-    border-radius: 18px;
-    box-shadow: 0px 0px 28px -15px;
-    border: 1px solid rgba(222, 245, 255, 1);
+    position: relative;
+    perspective: 700px;
+  }
+  .card-container:hover>.flip-card{
+    cursor: pointer;
+    transform: rotateY(180deg)rotateZ(180deg);
+   }
+   .flip-card{
+    width: 100%;
+    height: 100%;
     background-image: linear-gradient(rgba(222, 245, 255, 1),rgba(255, 255, 255, 0.541));
+    border: 1px solid rgba(222, 245, 255, 1);
+    border-radius: 18px;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+   }
+   .card-front,.card-back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+   }
+   .card-front{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+   }
+   .card-back{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: #FEA301;
+    border-radius: 18px;
+    transform: rotateY(180deg)rotateZ(180deg);
+   }
+.curriculam-card{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 25px;
+  flex-wrap: wrap;
 }
 .card2{
     background-image: linear-gradient(rgba(255, 244, 220, 1),rgba(255, 255, 255, 0.541));
@@ -154,13 +194,8 @@
 .card3{
     background-image: linear-gradient(rgba(238, 225, 255, 1),rgba(255, 255, 255,0.541));
     border: 1px solid rgba(238, 225, 255, 1);
-}
-/* .curriculam-card:hover{
-  
-} */
-.card-img{
-    margin-top: 52px;
-}
+} 
+
 .card-heading{
     font-size: 1.6rem;
     font-weight: bold;
@@ -168,8 +203,9 @@
 }
 .card-des{
     font-size: 1rem;
+    font-weight: 400;
     line-height: 28px;
-    margin-bottom: 34px;
+    padding: 0px 40px;
 }
 .card-btn{
     font-family: "Quicksand", serif;
@@ -259,6 +295,7 @@
 }
 #st-card-1{
   grid-row: span 2;
+  width: 550px;
 }
 .st-card-content{
   padding: 0px 30px;
@@ -267,7 +304,10 @@
 .stories-btn{
   margin: 80px 0px 60px 0px;
   padding: 10px 56px;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
+}
+.stories-btn:hover{
+  background-color: #FFE2B0;
 }
 /* ========== footer styles ======== */
 .footer-area{
